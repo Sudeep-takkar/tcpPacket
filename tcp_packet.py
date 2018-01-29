@@ -1,10 +1,9 @@
+source_Packet = hex(int('0864'))
+dest_Packet = format(8070, 'x')
 
-sourcePacket = hex(int('0864'))
-destPacket = format(8070, 'x')
+seq_Numbr = '00000000'
+ack_Numbr = '00000000'
 
-seqNumbr = '00000000'
-ackNumbr = '00000000'
+data_Offset = '51020010'
 
-dataOffset = '51020010'
-
-print(sourcePacket + destPacket + seqNumbr + ackNumbr + dataOffset)
+print(source_Packet + dest_Packet + seq_Numbr + ack_Numbr + data_Offset)
